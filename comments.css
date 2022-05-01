@@ -1,0 +1,99 @@
+/* loads the font file */
+@font-face {
+    font-family: "PPHatton";
+    src: url("PPHatton-Medium.otf") format("opentype");
+    font-style: "medium";
+  }
+
+  @font-face {
+    font-family: "PPHattonBold";
+    src: url("PPHatton-Bold.otf") format("opentype");
+    font-style: bold;
+  }
+
+* {
+    background-color: #f8efe8;
+    padding: 50px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: "PPHatton";
+
+    
+    /* padding: 40px 0; */
+    font-size: 30px;
+}
+
+
+input[type=text]:invalid {
+    border: black 1px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    /* margin-left: 20px; */
+}
+
+/* typing inside the comment box */
+.container > label {
+   text-align: left;
+}
+
+/* title */
+.container > textarea {
+    text-align: left;
+ }
+
+/* comment box on hover */
+#comment:hover{
+    background-color: #c8d68b;
+}
+
+
+
+/* add button */
+#addComments {
+    width: 20%;
+    padding: 20px;
+    background-color: #f8efe8;
+    color: #202124;
+    /* align-self: center; */
+}
+
+/* hover state for add button */
+#addComments:hover {
+    padding: 20px;
+    background-color: #202124;
+    color: #f8efe8;
+}
+
+
+
+
+.wrapper {
+    margin-right: 5px;
+    padding: 5px;
+    /* background-color: #202124; */
+    color: #f8efe8;
+}
+
+/* reply, like, delete buttons */
+.wrapper > button {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #f8efe8;
+    color: #202124;
+}
+
+/* hover state for reply, like, delete buttons */
+.wrapper > button:hover {
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #202124;
+    color: #f8efe8;
+}
+
